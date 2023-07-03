@@ -107,12 +107,18 @@ That's it! You now have the PollApp up and running, with both the API and PollSi
 ## There's room for improvement!
 This application has several areas that can be enhanced to make it better. Here are the main points to consider:
 
-1. Front-end Enhancement: The application can benefit from additional pages, a consistent style using a shared base template (base.html), and improved navigation elements.
+1. Front-end Enhancement: The application can benefit from additional pages, a consistent style using a shared base template (base.html), improved navigation elements, and separate html and js code within the Django project (template/static ...).
 
 2. Server Architecture: Consider transitioning from a template provider to a data provider approach. This involves separating the server-side logic from the front-end and leveraging more advanced front-end frameworks like Angular, React, or Vue.js to enhance the user experience.
 
-3. Database Upgrade: Consider using a more robust and scalable database solution like PostgreSQL or exploring other options that better suit your application's needs.
+3. Database Upgrade: Consider using a more robust and scalable database solution like PostgreSQL or exploring other options that better suit the application's needs.
 
 4. Improved Caching: Instead of relying on an in-memory cache, consider utilizing a dedicated database for caching purposes, such as Redis. This can provide better performance and more reliable caching capabilities.
 
 5. Docker Compose Orchestration: Utilize Docker Compose to define and manage the containers within your application. This will simplify the deployment process and enable easier container orchestration.
+
+6. Set the logging service: Use a logs manager like Kibana or Grafana.
+   
+8. Expand the database model (ORM): Collect more user data (such as age, sex, education, demographic...) to make statistics more powerful.
+   
+Many things are not finished, mainly due to time constraints or because I didn't feel it was part of the project.
